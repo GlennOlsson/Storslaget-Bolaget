@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07AD76C0A9F1FBA959AD6FF9 /* Pods_Storslaget_BolagetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B86EF9365C37A6096F5FD98 /* Pods_Storslaget_BolagetTests.framework */; };
+		21165D8C244358BC00EABC29 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21165D8B244358BC00EABC29 /* CategoriesView.swift */; };
+		21165D8E24435C5900EABC29 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21165D8D24435C5900EABC29 /* Constants.swift */; };
 		219EF21B244357F1003F4040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF21A244357F1003F4040 /* AppDelegate.swift */; };
 		219EF21D244357F1003F4040 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF21C244357F1003F4040 /* SceneDelegate.swift */; };
 		219EF220244357F1003F4040 /* Storslaget_Bolaget.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 219EF21E244357F1003F4040 /* Storslaget_Bolaget.xcdatamodeld */; };
@@ -15,6 +18,7 @@
 		219EF227244357F2003F4040 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219EF226244357F2003F4040 /* Preview Assets.xcassets */; };
 		219EF22A244357F2003F4040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219EF228244357F2003F4040 /* LaunchScreen.storyboard */; };
 		219EF235244357F2003F4040 /* Storslaget_BolagetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF234244357F2003F4040 /* Storslaget_BolagetTests.swift */; };
+		992038F2E2D874F0E328BA72 /* Pods_Storslaget_Bolaget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9481708D0DC302B44177D337 /* Pods_Storslaget_Bolaget.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21165D8B244358BC00EABC29 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		21165D8D24435C5900EABC29 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		219EF217244357F1003F4040 /* Storslaget_Bolaget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Storslaget_Bolaget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		219EF21A244357F1003F4040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		219EF21C244357F1003F4040 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +46,12 @@
 		219EF230244357F2003F4040 /* Storslaget_BolagetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Storslaget_BolagetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		219EF234244357F2003F4040 /* Storslaget_BolagetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storslaget_BolagetTests.swift; sourceTree = "<group>"; };
 		219EF236244357F2003F4040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22DF5657765D5F91281ADF90 /* Pods-Storslaget_Bolaget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storslaget_Bolaget.release.xcconfig"; path = "Target Support Files/Pods-Storslaget_Bolaget/Pods-Storslaget_Bolaget.release.xcconfig"; sourceTree = "<group>"; };
+		78E18F540EF3383C9B388A5D /* Pods-Storslaget_BolagetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storslaget_BolagetTests.debug.xcconfig"; path = "Target Support Files/Pods-Storslaget_BolagetTests/Pods-Storslaget_BolagetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B86EF9365C37A6096F5FD98 /* Pods_Storslaget_BolagetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Storslaget_BolagetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9481708D0DC302B44177D337 /* Pods_Storslaget_Bolaget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Storslaget_Bolaget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B8A28DF193210520E732036 /* Pods-Storslaget_BolagetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storslaget_BolagetTests.release.xcconfig"; path = "Target Support Files/Pods-Storslaget_BolagetTests/Pods-Storslaget_BolagetTests.release.xcconfig"; sourceTree = "<group>"; };
+		E89E18A3BBFA54A8C2F7D650 /* Pods-Storslaget_Bolaget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storslaget_Bolaget.debug.xcconfig"; path = "Target Support Files/Pods-Storslaget_Bolaget/Pods-Storslaget_Bolaget.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992038F2E2D874F0E328BA72 /* Pods_Storslaget_Bolaget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07AD76C0A9F1FBA959AD6FF9 /* Pods_Storslaget_BolagetTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +80,8 @@
 				219EF219244357F1003F4040 /* Storslaget_Bolaget */,
 				219EF233244357F2003F4040 /* Storslaget_BolagetTests */,
 				219EF218244357F1003F4040 /* Products */,
+				C1CF02383B487A328E139617 /* Pods */,
+				CE01EE981F0394D5D26F1000 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +100,8 @@
 				219EF21A244357F1003F4040 /* AppDelegate.swift */,
 				219EF21C244357F1003F4040 /* SceneDelegate.swift */,
 				219EF221244357F1003F4040 /* ContentView.swift */,
+				21165D8B244358BC00EABC29 /* CategoriesView.swift */,
+				21165D8D24435C5900EABC29 /* Constants.swift */,
 				219EF223244357F2003F4040 /* Assets.xcassets */,
 				219EF228244357F2003F4040 /* LaunchScreen.storyboard */,
 				219EF22B244357F2003F4040 /* Info.plist */,
@@ -110,6 +128,26 @@
 			path = Storslaget_BolagetTests;
 			sourceTree = "<group>";
 		};
+		C1CF02383B487A328E139617 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E89E18A3BBFA54A8C2F7D650 /* Pods-Storslaget_Bolaget.debug.xcconfig */,
+				22DF5657765D5F91281ADF90 /* Pods-Storslaget_Bolaget.release.xcconfig */,
+				78E18F540EF3383C9B388A5D /* Pods-Storslaget_BolagetTests.debug.xcconfig */,
+				9B8A28DF193210520E732036 /* Pods-Storslaget_BolagetTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE01EE981F0394D5D26F1000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9481708D0DC302B44177D337 /* Pods_Storslaget_Bolaget.framework */,
+				8B86EF9365C37A6096F5FD98 /* Pods_Storslaget_BolagetTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +155,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 219EF239244357F2003F4040 /* Build configuration list for PBXNativeTarget "Storslaget_Bolaget" */;
 			buildPhases = (
+				23E08F2DE6DD35523D864ECC /* [CP] Check Pods Manifest.lock */,
 				219EF213244357F1003F4040 /* Sources */,
 				219EF214244357F1003F4040 /* Frameworks */,
 				219EF215244357F1003F4040 /* Resources */,
@@ -134,6 +173,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 219EF23C244357F2003F4040 /* Build configuration list for PBXNativeTarget "Storslaget_BolagetTests" */;
 			buildPhases = (
+				7AF564714DE871234BB03563 /* [CP] Check Pods Manifest.lock */,
 				219EF22C244357F2003F4040 /* Sources */,
 				219EF22D244357F2003F4040 /* Frameworks */,
 				219EF22E244357F2003F4040 /* Resources */,
@@ -206,6 +246,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23E08F2DE6DD35523D864ECC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Storslaget_Bolaget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AF564714DE871234BB03563 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Storslaget_BolagetTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		219EF213244357F1003F4040 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -214,7 +301,9 @@
 				219EF21B244357F1003F4040 /* AppDelegate.swift in Sources */,
 				219EF220244357F1003F4040 /* Storslaget_Bolaget.xcdatamodeld in Sources */,
 				219EF222244357F1003F4040 /* ContentView.swift in Sources */,
+				21165D8C244358BC00EABC29 /* CategoriesView.swift in Sources */,
 				219EF21D244357F1003F4040 /* SceneDelegate.swift in Sources */,
+				21165D8E24435C5900EABC29 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +453,7 @@
 		};
 		219EF23A244357F2003F4040 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E89E18A3BBFA54A8C2F7D650 /* Pods-Storslaget_Bolaget.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,6 +474,7 @@
 		};
 		219EF23B244357F2003F4040 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DF5657765D5F91281ADF90 /* Pods-Storslaget_Bolaget.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -404,6 +495,7 @@
 		};
 		219EF23D244357F2003F4040 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78E18F540EF3383C9B388A5D /* Pods-Storslaget_BolagetTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -426,6 +518,7 @@
 		};
 		219EF23E244357F2003F4040 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B8A28DF193210520E732036 /* Pods-Storslaget_BolagetTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
