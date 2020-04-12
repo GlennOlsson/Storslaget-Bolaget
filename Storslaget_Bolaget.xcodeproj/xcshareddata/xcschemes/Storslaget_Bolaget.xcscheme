@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "219EF216244357F1003F4040"
-               BuildableName = "Storslaget_Bolaget.app"
+               BuildableName = "Storslaget Bolaget.app"
                BlueprintName = "Storslaget_Bolaget"
                ReferencedContainer = "container:Storslaget_Bolaget.xcodeproj">
             </BuildableReference>
@@ -55,7 +55,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "219EF216244357F1003F4040"
-            BuildableName = "Storslaget_Bolaget.app"
+            BuildableName = "Storslaget Bolaget.app"
             BlueprintName = "Storslaget_Bolaget"
             ReferencedContainer = "container:Storslaget_Bolaget.xcodeproj">
          </BuildableReference>
@@ -72,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "219EF216244357F1003F4040"
-            BuildableName = "Storslaget_Bolaget.app"
+            BuildableName = "Storslaget Bolaget.app"
             BlueprintName = "Storslaget_Bolaget"
             ReferencedContainer = "container:Storslaget_Bolaget.xcodeproj">
          </BuildableReference>

@@ -7,27 +7,33 @@
 //
 
 import SwiftUI
+import JSON
 
 //Show with
 //Button.sheet(isPresented: self.$isPushing)
 
-//TODO: Actually implement
-func getProductsOf(category: String) -> [[String: Any]] {
-	
-}
-
 struct CategoryDetailView: View {
 	
 	var category: String
+	var controller: CategoryDetailViewController
 	
-    var body: some View {
+	init(category: String){
+		self.category = category
+		//		products = getProductsOf(category: category)
+		controller = CategoryDetailViewController(category: category)
+	}
+	
+	var body: some View {
 		Text("Category \(category)")
-		.navigationBarTitle(category)
-    }
+			.navigationBarTitle(category)
+			.onAppear(){
+				self.controller.getProducts()
+		}
+	}
 }
 
 struct CategoryDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        CategoryDetailView(category: "Vita viner")
-    }
+	static var previews: some View {
+		CategoryDetailView(category: "Vita viner")
+	}
 }

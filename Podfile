@@ -6,7 +6,8 @@ target 'Storslaget_Bolaget' do
   use_frameworks!
 
   # Pods for Storslaget_Bolaget
-
+	pod 'JSON'
+	
   target 'Storslaget_BolagetTests' do
     inherit! :search_paths
     # Pods for testing

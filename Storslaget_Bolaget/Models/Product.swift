@@ -51,3 +51,4 @@ struct Product {
     var taste: String?
     var assortment: String?
 	var isInStoreSearchAssortment: String?
+}
