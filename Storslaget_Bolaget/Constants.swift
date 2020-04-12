@@ -19,14 +19,11 @@ let COLORS: [Color] = [
 ]
 
 public func HASH(_ str: String) -> Int {
-	print("Hashing \(str)")
 	var val = 1
 	for char in str {
 		if let asciiVal = char.asciiValue {
-			print(val)
 			val *= 7 * Int(asciiVal)
 		} else {
-			print(val)
 			val *= 7 * 13
 		}
 		if val > 1000 {
@@ -35,4 +32,19 @@ public func HASH(_ str: String) -> Int {
 		val = abs(val)
 	}
 	return val
+}
+
+//Get pixels reprecenting x precent of said dimension
+public func getPixels(dimension: DIMENSION, precent: CGFloat) -> CGFloat{
+	let bounds = UIScreen.main.bounds
+	switch dimension {
+	case .vertical:
+		return CGFloat(precent / CGFloat(100)) * bounds.height
+	case .horizontal:
+		return CGFloat(precent / CGFloat(100)) * bounds.width
+	}
+}
+
+public enum DIMENSION {
+	case vertical, horizontal
 }

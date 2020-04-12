@@ -8,6 +8,9 @@
 
 import SwiftUI
 
+let squareSize = getPixels(dimension: .horizontal, precent: 40)
+let spacingSize = getPixels(dimension: .horizontal, precent: 5)
+
 struct CategoriesView: View {
 	
 	private let placeholderCategories = ["Öl", "Vita viner", "Roséviner", "Röda viner", "Sprit", "Dessert & appertif", "Högst betyg", "Högst betyg", "Högst betyg", "Högst betyg", "Högst betyg"]
@@ -31,11 +34,12 @@ struct CategoriesView: View {
 	
     var body: some View {
 		ScrollView {
-			VStack(spacing: .some(30)) {
+			VStack(spacing: .some(spacingSize)) {
 				ForEach(pairList, id: \.self) { catList in
 					CategoryRow(categories: catList)
 				}
 			}
+			Spacer()
 		}
     }
 }
@@ -55,16 +59,16 @@ private struct CategoryRow: View {
 	}
 	
 	var body: some View {
-		HStack(spacing: .some(30)){
+		HStack(spacing: .some(spacingSize)){
 			Category(name: cat1)
 			if cat2 != nil {
 				Category(name: cat2!)
 			} else {
 				Spacer()
-					.frame(width: 150, height: 150, alignment: .center)
+					.frame(width: squareSize, height: squareSize, alignment: .center)
 			}
 		}
-		.frame(width: UIScreen.main.bounds.width)
+		.frame(width: getPixels(dimension: .horizontal, precent: 100))
 	}
 }
 
@@ -79,7 +83,7 @@ private struct Category: View {
 	var body: some View {
 		Text(name)
 			.foregroundColor(Color.white)
-			.frame(width: 150, height: 150, alignment: .center)
+			.frame(width: squareSize, height: squareSize, alignment: .center)
 			.background(getBGColor())
 			.cornerRadius(20)
 	}
