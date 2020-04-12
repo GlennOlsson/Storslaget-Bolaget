@@ -29,6 +29,7 @@ struct CategoryDetailView: View {
 	
 	var body: some View {
 		ScrollView {
+			Spacer()
 			ForEach(products) {product in
 				ListItem(product: product)
 					.listRowInsets(EdgeInsets())
@@ -37,7 +38,6 @@ struct CategoryDetailView: View {
 			}
 				//			.padding(.leading, -18.0)
 				//			.lineSpacing(50)
-				.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
 				.listRowInsets(EdgeInsets())
 				
 				
@@ -60,15 +60,35 @@ struct ListItem: View {
 	var body: some View {
 		HStack(){
 			VStack{
-				VStack {
+				HStack {
 					Text(product.productNameBold)
+						.padding(.leading, 10)
+					Spacer()
+					Text(product.rating.stringValue)
+					Text("/ 5")
+						.fontWeight(.light)
+						.padding(.trailing, 10)
+						.padding(.leading, -2)
+					
+				}
+				Spacer().frame(height: 5)
+				HStack {
 					if product.productNameThin != nil {
 						Text(product.productNameThin!)
+							.font(.subheadline)
+							.padding(.leading, 10)
 					} else {
 						Text(product.alcoholPercentage.stringValue)
+							.font(.subheadline)
+							.padding(.leading, 10)
 					}
+					Spacer()
+					//TODO: Round value somewhat, 1 decimal?
+					Text("\(product.price.stringValue) kr")
+					.padding(.trailing, 10)
+						.font(.subheadline)
+					
 				}
-				Text(product.price.stringValue)
 			}
 			.frame(width: getPixels(dimension: .horizontal, precent: 95), height: 100, alignment: .center)
 			.background(getBGColor())

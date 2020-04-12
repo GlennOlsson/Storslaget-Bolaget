@@ -48,3 +48,16 @@ public func getPixels(dimension: DIMENSION, precent: CGFloat) -> CGFloat{
 public enum DIMENSION {
 	case vertical, horizontal
 }
+
+extension String {
+	func indexOf(char: String.Element) -> Int {
+		var i = 0
+		for c in self {
+			if c == char {
+				return i
+			}
+			i += 1
+		}
+		return -1
+	}
+}

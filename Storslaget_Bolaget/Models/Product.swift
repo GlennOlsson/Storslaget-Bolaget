@@ -11,6 +11,7 @@ import Foundation
 struct Product: Identifiable {
 	
 	var id: ObjectIdentifier
+	var rating: NSNumber
 	
 	//Required
 	var productId: String
@@ -99,5 +100,6 @@ struct Product: Identifiable {
 		isInStoreSearchAssortment = json["IsInStoreSearchAssortment"] as? Bool
 		
 		id = ObjectIdentifier(productId as AnyObject)
+		rating = json["Rating"] as! NSNumber
 	}
 }

@@ -38,7 +38,8 @@
 		"IsManufacturingCountry": true,
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0137;0170;0171;0172;0174;0177;0178;1517",
-		"IsNews": false
+		"IsNews": false,
+		"Rating": 5
 	},
 	{
 		"ProductId": "24437711",
@@ -79,7 +80,8 @@
 		"IsManufacturingCountry": true,
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0170;0171;0172;0174;0177;0178;0209;1108;2101",
-		"IsNews": false
+		"IsNews": false,
+		"Rating": 5
 	},
 	{
 		"ProductId": "14212174",
@@ -120,7 +122,8 @@
 		"IsManufacturingCountry": true,
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0140;0170;0171;0172;0174;0177;0178",
-		"IsNews": false
+		"IsNews": false,
+		"Rating": 3.141597
 	},
 	{
 		"ProductId": "23129459",
@@ -161,7 +164,8 @@
 		"IsManufacturingCountry": true,
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0170;0171;0174;0178",
-		"IsNews": false
+		"IsNews": false,
+		"Rating": 4.221
 	},
 	{
 		"ProductId": "24428926",
@@ -202,7 +206,8 @@
 		"IsManufacturingCountry": true,
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0110;0132;0140;0170;0171;0172;0174;0177;0178;0605;1257;2201",
-		"IsNews": false
+		"IsNews": false,
+		"Rating": 5
 	},
 	{
 		"ProductId": "24448835",
@@ -243,7 +248,8 @@
 		"IsManufacturingCountry": true,
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178;1003;1803;2204;2501",
-		"IsNews": false
+		"IsNews": false,
+		"Rating": 5
 	},
 	{
 		"ProductId": "23129360",
@@ -284,7 +290,8 @@
 		"IsManufacturingCountry": true,
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178",
-		"IsNews": false
+		"IsNews": false,
+		"Rating": 4.122
 	},
 	{
 		"ProductId": "23129360",
@@ -325,7 +332,8 @@
 		"IsManufacturingCountry": true,
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178",
-		"IsNews": false
+		"IsNews": false,
+		"Rating": 4.6
 	},
 	{
 		"ProductId": "23129360",
@@ -366,7 +374,8 @@
 		"IsManufacturingCountry": true,
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178",
-		"IsNews": false
+		"IsNews": false,
+		"Rating": 5
 	},
 	{
 		"ProductId": "23129360",
@@ -407,7 +416,8 @@
 		"IsManufacturingCountry": true,
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178",
-		"IsNews": false
+		"IsNews": false,
+		"Rating": 4.7
 	},
 	{
 		"ProductId": "23129360",
@@ -448,7 +458,8 @@
 		"IsManufacturingCountry": true,
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178",
-		"IsNews": false
+		"IsNews": false,
+		"Rating": 3.5
 	},
 	{
 		"ProductId": "23129360",
@@ -489,7 +500,8 @@
 		"IsManufacturingCountry": true,
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178",
-		"IsNews": false
+		"IsNews": false,
+		"Rating": 2.45
 	},
 	{
 		"ProductId": "23129360",
@@ -530,7 +542,8 @@
 		"IsManufacturingCountry": true,
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178",
-		"IsNews": false
+		"IsNews": false,
+		"Rating": 1.432
 	},
 	{
 		"ProductId": "23129360",
@@ -571,6 +584,7 @@
 		"IsManufacturingCountry": true,
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178",
-		"IsNews": false
+		"IsNews": false,
+		"Rating": 4.23322
 	}
 ]
