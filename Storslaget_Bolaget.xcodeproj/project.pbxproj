@@ -10,6 +10,7 @@
 		07AD76C0A9F1FBA959AD6FF9 /* Pods_Storslaget_BolagetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B86EF9365C37A6096F5FD98 /* Pods_Storslaget_BolagetTests.framework */; };
 		21165D8C244358BC00EABC29 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21165D8B244358BC00EABC29 /* CategoriesView.swift */; };
 		21165D8E24435C5900EABC29 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21165D8D24435C5900EABC29 /* Constants.swift */; };
+		21165D9024436A3900EABC29 /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21165D8F24436A3900EABC29 /* CategoryDetailView.swift */; };
 		219EF21B244357F1003F4040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF21A244357F1003F4040 /* AppDelegate.swift */; };
 		219EF21D244357F1003F4040 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF21C244357F1003F4040 /* SceneDelegate.swift */; };
 		219EF220244357F1003F4040 /* Storslaget_Bolaget.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 219EF21E244357F1003F4040 /* Storslaget_Bolaget.xcdatamodeld */; };
@@ -34,7 +35,8 @@
 /* Begin PBXFileReference section */
 		21165D8B244358BC00EABC29 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		21165D8D24435C5900EABC29 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		219EF217244357F1003F4040 /* Storslaget_Bolaget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Storslaget_Bolaget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21165D8F24436A3900EABC29 /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
+		219EF217244357F1003F4040 /* Storslaget Bolaget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Storslaget Bolaget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		219EF21A244357F1003F4040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		219EF21C244357F1003F4040 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		219EF21F244357F1003F4040 /* Storslaget_Bolaget.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Storslaget_Bolaget.xcdatamodel; sourceTree = "<group>"; };
@@ -88,7 +90,7 @@
 		219EF218244357F1003F4040 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				219EF217244357F1003F4040 /* Storslaget_Bolaget.app */,
+				219EF217244357F1003F4040 /* Storslaget Bolaget.app */,
 				219EF230244357F2003F4040 /* Storslaget_BolagetTests.xctest */,
 			);
 			name = Products;
@@ -101,6 +103,7 @@
 				219EF21C244357F1003F4040 /* SceneDelegate.swift */,
 				219EF221244357F1003F4040 /* ContentView.swift */,
 				21165D8B244358BC00EABC29 /* CategoriesView.swift */,
+				21165D8F24436A3900EABC29 /* CategoryDetailView.swift */,
 				21165D8D24435C5900EABC29 /* Constants.swift */,
 				219EF223244357F2003F4040 /* Assets.xcassets */,
 				219EF228244357F2003F4040 /* LaunchScreen.storyboard */,
@@ -166,7 +169,7 @@
 			);
 			name = Storslaget_Bolaget;
 			productName = Storslaget_Bolaget;
-			productReference = 219EF217244357F1003F4040 /* Storslaget_Bolaget.app */;
+			productReference = 219EF217244357F1003F4040 /* Storslaget Bolaget.app */;
 			productType = "com.apple.product-type.application";
 		};
 		219EF22F244357F2003F4040 /* Storslaget_BolagetTests */ = {
@@ -303,6 +306,7 @@
 				219EF222244357F1003F4040 /* ContentView.swift in Sources */,
 				21165D8C244358BC00EABC29 /* CategoriesView.swift in Sources */,
 				219EF21D244357F1003F4040 /* SceneDelegate.swift in Sources */,
+				21165D9024436A3900EABC29 /* CategoryDetailView.swift in Sources */,
 				21165D8E24435C5900EABC29 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,7 +470,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "glennolsson.Storslaget-Bolaget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Storslaget Bolaget";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -487,7 +491,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "glennolsson.Storslaget-Bolaget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Storslaget Bolaget";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
