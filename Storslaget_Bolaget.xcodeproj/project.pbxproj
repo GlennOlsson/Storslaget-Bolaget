@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		219EF21B244357F1003F4040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF21A244357F1003F4040 /* AppDelegate.swift */; };
+		219EF21D244357F1003F4040 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF21C244357F1003F4040 /* SceneDelegate.swift */; };
+		219EF220244357F1003F4040 /* Storslaget_Bolaget.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 219EF21E244357F1003F4040 /* Storslaget_Bolaget.xcdatamodeld */; };
+		219EF222244357F1003F4040 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF221244357F1003F4040 /* ContentView.swift */; };
+		219EF224244357F2003F4040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219EF223244357F2003F4040 /* Assets.xcassets */; };
+		219EF227244357F2003F4040 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219EF226244357F2003F4040 /* Preview Assets.xcassets */; };
+		219EF22A244357F2003F4040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219EF228244357F2003F4040 /* LaunchScreen.storyboard */; };
+		219EF235244357F2003F4040 /* Storslaget_BolagetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF234244357F2003F4040 /* Storslaget_BolagetTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		219EF231244357F2003F4040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 219EF20F244357F1003F4040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 219EF216244357F1003F4040;
+			remoteInfo = Storslaget_Bolaget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		219EF217244357F1003F4040 /* Storslaget_Bolaget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Storslaget_Bolaget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		219EF21A244357F1003F4040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		219EF21C244357F1003F4040 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		219EF21F244357F1003F4040 /* Storslaget_Bolaget.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Storslaget_Bolaget.xcdatamodel; sourceTree = "<group>"; };
+		219EF221244357F1003F4040 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		219EF223244357F2003F4040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		219EF226244357F2003F4040 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		219EF229244357F2003F4040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		219EF22B244357F2003F4040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		219EF230244357F2003F4040 /* Storslaget_BolagetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Storslaget_BolagetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		219EF234244357F2003F4040 /* Storslaget_BolagetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storslaget_BolagetTests.swift; sourceTree = "<group>"; };
+		219EF236244357F2003F4040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		219EF214244357F1003F4040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		219EF22D244357F2003F4040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		219EF20E244357F1003F4040 = {
+			isa = PBXGroup;
+			children = (
+				219EF219244357F1003F4040 /* Storslaget_Bolaget */,
+				219EF233244357F2003F4040 /* Storslaget_BolagetTests */,
+				219EF218244357F1003F4040 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		219EF218244357F1003F4040 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				219EF217244357F1003F4040 /* Storslaget_Bolaget.app */,
+				219EF230244357F2003F4040 /* Storslaget_BolagetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		219EF219244357F1003F4040 /* Storslaget_Bolaget */ = {
+			isa = PBXGroup;
+			children = (
+				219EF21A244357F1003F4040 /* AppDelegate.swift */,
+				219EF21C244357F1003F4040 /* SceneDelegate.swift */,
+				219EF221244357F1003F4040 /* ContentView.swift */,
+				219EF223244357F2003F4040 /* Assets.xcassets */,
+				219EF228244357F2003F4040 /* LaunchScreen.storyboard */,
+				219EF22B244357F2003F4040 /* Info.plist */,
+				219EF21E244357F1003F4040 /* Storslaget_Bolaget.xcdatamodeld */,
+				219EF225244357F2003F4040 /* Preview Content */,
+			);
+			path = Storslaget_Bolaget;
+			sourceTree = "<group>";
+		};
+		219EF225244357F2003F4040 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				219EF226244357F2003F4040 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		219EF233244357F2003F4040 /* Storslaget_BolagetTests */ = {
+			isa = PBXGroup;
+			children = (
+				219EF234244357F2003F4040 /* Storslaget_BolagetTests.swift */,
+				219EF236244357F2003F4040 /* Info.plist */,
+			);
+			path = Storslaget_BolagetTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		219EF216244357F1003F4040 /* Storslaget_Bolaget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 219EF239244357F2003F4040 /* Build configuration list for PBXNativeTarget "Storslaget_Bolaget" */;
+			buildPhases = (
+				219EF213244357F1003F4040 /* Sources */,
+				219EF214244357F1003F4040 /* Frameworks */,
+				219EF215244357F1003F4040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Storslaget_Bolaget;
+			productName = Storslaget_Bolaget;
+			productReference = 219EF217244357F1003F4040 /* Storslaget_Bolaget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		219EF22F244357F2003F4040 /* Storslaget_BolagetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 219EF23C244357F2003F4040 /* Build configuration list for PBXNativeTarget "Storslaget_BolagetTests" */;
+			buildPhases = (
+				219EF22C244357F2003F4040 /* Sources */,
+				219EF22D244357F2003F4040 /* Frameworks */,
+				219EF22E244357F2003F4040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				219EF232244357F2003F4040 /* PBXTargetDependency */,
+			);
+			name = Storslaget_BolagetTests;
+			productName = Storslaget_BolagetTests;
+			productReference = 219EF230244357F2003F4040 /* Storslaget_BolagetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		219EF20F244357F1003F4040 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Glenn Olsson";
+				TargetAttributes = {
+					219EF216244357F1003F4040 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					219EF22F244357F2003F4040 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 219EF216244357F1003F4040;
+					};
+				};
+			};
+			buildConfigurationList = 219EF212244357F1003F4040 /* Build configuration list for PBXProject "Storslaget_Bolaget" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 219EF20E244357F1003F4040;
+			productRefGroup = 219EF218244357F1003F4040 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				219EF216244357F1003F4040 /* Storslaget_Bolaget */,
+				219EF22F244357F2003F4040 /* Storslaget_BolagetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		219EF215244357F1003F4040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				219EF22A244357F2003F4040 /* LaunchScreen.storyboard in Resources */,
+				219EF227244357F2003F4040 /* Preview Assets.xcassets in Resources */,
+				219EF224244357F2003F4040 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		219EF22E244357F2003F4040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		219EF213244357F1003F4040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				219EF21B244357F1003F4040 /* AppDelegate.swift in Sources */,
+				219EF220244357F1003F4040 /* Storslaget_Bolaget.xcdatamodeld in Sources */,
+				219EF222244357F1003F4040 /* ContentView.swift in Sources */,
+				219EF21D244357F1003F4040 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		219EF22C244357F2003F4040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				219EF235244357F2003F4040 /* Storslaget_BolagetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		219EF232244357F2003F4040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 219EF216244357F1003F4040 /* Storslaget_Bolaget */;
+			targetProxy = 219EF231244357F2003F4040 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		219EF228244357F2003F4040 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				219EF229244357F2003F4040 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		219EF237244357F2003F4040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		219EF238244357F2003F4040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		219EF23A244357F2003F4040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Storslaget_Bolaget/Preview Content\"";
+				DEVELOPMENT_TEAM = S9S99M2W87;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Storslaget_Bolaget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "glennolsson.Storslaget-Bolaget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		219EF23B244357F2003F4040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Storslaget_Bolaget/Preview Content\"";
+				DEVELOPMENT_TEAM = S9S99M2W87;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Storslaget_Bolaget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "glennolsson.Storslaget-Bolaget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		219EF23D244357F2003F4040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S9S99M2W87;
+				INFOPLIST_FILE = Storslaget_BolagetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "glennolsson.Storslaget-BolagetTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Storslaget_Bolaget.app/Storslaget_Bolaget";
+			};
+			name = Debug;
+		};
+		219EF23E244357F2003F4040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S9S99M2W87;
+				INFOPLIST_FILE = Storslaget_BolagetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "glennolsson.Storslaget-BolagetTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Storslaget_Bolaget.app/Storslaget_Bolaget";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		219EF212244357F1003F4040 /* Build configuration list for PBXProject "Storslaget_Bolaget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				219EF237244357F2003F4040 /* Debug */,
+				219EF238244357F2003F4040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		219EF239244357F2003F4040 /* Build configuration list for PBXNativeTarget "Storslaget_Bolaget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				219EF23A244357F2003F4040 /* Debug */,
+				219EF23B244357F2003F4040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		219EF23C244357F2003F4040 /* Build configuration list for PBXNativeTarget "Storslaget_BolagetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				219EF23D244357F2003F4040 /* Debug */,
+				219EF23E244357F2003F4040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		219EF21E244357F1003F4040 /* Storslaget_Bolaget.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				219EF21F244357F1003F4040 /* Storslaget_Bolaget.xcdatamodel */,
+			);
+			currentVersion = 219EF21F244357F1003F4040 /* Storslaget_Bolaget.xcdatamodel */;
+			path = Storslaget_Bolaget.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 219EF20F244357F1003F4040 /* Project object */;
+}
