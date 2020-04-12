@@ -13,7 +13,7 @@
 		21165D9024436A3900EABC29 /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21165D8F24436A3900EABC29 /* CategoryDetailView.swift */; };
 		21165D9324438CF600EABC29 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21165D9224438CF600EABC29 /* Product.swift */; };
 		21165D96244392C400EABC29 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = 21165D95244392C400EABC29 /* Products.json */; };
-		21165D9824439B4100EABC29 /* CategoryDetailVW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21165D9724439B4100EABC29 /* CategoryDetailVW.swift */; };
+		21165D9824439B4100EABC29 /* CategoryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21165D9724439B4100EABC29 /* CategoryDetailVC.swift */; };
 		219EF21B244357F1003F4040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF21A244357F1003F4040 /* AppDelegate.swift */; };
 		219EF21D244357F1003F4040 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF21C244357F1003F4040 /* SceneDelegate.swift */; };
 		219EF220244357F1003F4040 /* Storslaget_Bolaget.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 219EF21E244357F1003F4040 /* Storslaget_Bolaget.xcdatamodeld */; };
@@ -41,7 +41,7 @@
 		21165D8F24436A3900EABC29 /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
 		21165D9224438CF600EABC29 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		21165D95244392C400EABC29 /* Products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
-		21165D9724439B4100EABC29 /* CategoryDetailVW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailVW.swift; sourceTree = "<group>"; };
+		21165D9724439B4100EABC29 /* CategoryDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailVC.swift; sourceTree = "<group>"; };
 		219EF217244357F1003F4040 /* Storslaget Bolaget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Storslaget Bolaget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		219EF21A244357F1003F4040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		219EF21C244357F1003F4040 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 				219EF221244357F1003F4040 /* ContentView.swift */,
 				21165D8B244358BC00EABC29 /* CategoriesView.swift */,
 				21165D8F24436A3900EABC29 /* CategoryDetailView.swift */,
-				21165D9724439B4100EABC29 /* CategoryDetailVW.swift */,
+				21165D9724439B4100EABC29 /* CategoryDetailVC.swift */,
 				21165D8D24435C5900EABC29 /* Constants.swift */,
 				219EF223244357F2003F4040 /* Assets.xcassets */,
 				219EF228244357F2003F4040 /* LaunchScreen.storyboard */,
@@ -350,7 +350,7 @@
 				219EF220244357F1003F4040 /* Storslaget_Bolaget.xcdatamodeld in Sources */,
 				219EF222244357F1003F4040 /* ContentView.swift in Sources */,
 				21165D8C244358BC00EABC29 /* CategoriesView.swift in Sources */,
-				21165D9824439B4100EABC29 /* CategoryDetailVW.swift in Sources */,
+				21165D9824439B4100EABC29 /* CategoryDetailVC.swift in Sources */,
 				219EF21D244357F1003F4040 /* SceneDelegate.swift in Sources */,
 				21165D9024436A3900EABC29 /* CategoryDetailView.swift in Sources */,
 				21165D8E24435C5900EABC29 /* Constants.swift in Sources */,
