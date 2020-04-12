@@ -12,7 +12,7 @@ import SwiftUI
 //Button.sheet(isPresented: self.$isPushing)
 
 //TODO: Actually implement
-func getProductsOf(category: String){
+func getProductsOf(category: String) -> [[String: Any]] {
 	
 }
 
