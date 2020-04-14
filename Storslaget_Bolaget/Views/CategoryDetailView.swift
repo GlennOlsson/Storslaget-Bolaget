@@ -21,81 +21,10 @@ struct CategoryDetailView: View {
 	}
 	
 	var body: some View {
-		ScrollView { 
-			Spacer()
-			ForEach(state.getProductsOf(category: category)) {product in
-				Button(action: {
-					self.showModal = true
-					self.currentProduct = product
-				}){
-					ListItem(product: product)
-						.listRowInsets(EdgeInsets())
-						.clipped()
-				}
-				
-				Spacer().frame(height: getPixels(dimension: .vertical, precent: 2), alignment: .center)
-			}
-			.listRowInsets(EdgeInsets())
+		ScrollView {
+			ProductListComponent(products: state.getProductsOf(category: category))
+				.navigationBarTitle(category)
 		}
-		.sheet(isPresented: self.$showModal, content: {
-			ProductDetailView(product: self.currentProduct!)
-		})
-		.navigationBarTitle(category)
-	}
-}
-
-struct ListItem: View {
-	var product: Product
-	
-	func getBGColor() -> Color {
-		let index = HASH(product.price.stringValue) % COLORS.count
-		return COLORS[index]
-	}
-	
-	var body: some View {
-		HStack(){
-			VStack{
-				HStack {
-					Text(product.productNameBold)
-						.padding(.leading, 10)
-					Spacer()
-					
-					if product.avgRating != nil {
-						Text(product.avgRating!.stringValue)
-					} else {
-						Text("-")
-					}
-					Text("/ 5")
-						.fontWeight(.light)
-						.padding(.trailing, 10)
-						.padding(.leading, -2)
-					
-				}
-				Spacer().frame(height: 5)
-				HStack {
-					if product.productNameThin != nil {
-						Text(product.productNameThin!)
-							.font(.subheadline)
-							.padding(.leading, 10)
-					} else {
-						Text("\(product.alcoholPercentage.stringValue)%")
-							.font(.subheadline)
-							.padding(.leading, 10)
-					}
-					Spacer()
-					//TODO: Round value somewhat, 1 decimal?
-					Text("\(product.price.stringValue) kr")
-						.padding(.trailing, 10)
-						.font(.subheadline)
-					
-				}
-			}
-			.frame(width: getPixels(dimension: .horizontal, precent: 95), height: 100, alignment: .center)
-			.background(getBGColor())
-			.cornerRadius(20)
-		}
-		.frame(width: getPixels(dimension: .horizontal, precent: 100), alignment: .center)
-		.foregroundColor(.white)
 	}
 }
 

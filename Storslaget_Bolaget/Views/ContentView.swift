@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selection = 0
+    @State private var selection = 1
  
     var body: some View {
         TabView(selection: $selection){
@@ -21,8 +21,7 @@ struct ContentView: View {
                     }
 			}
                 .tag(0)
-            Text("Second View")
-                .font(.title)
+            SearchView()
                 .tabItem {
                     VStack {
                         Image(systemName: "magnifyingglass")

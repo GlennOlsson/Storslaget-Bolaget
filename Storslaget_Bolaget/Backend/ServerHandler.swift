@@ -32,3 +32,8 @@ func getAllProcucts() -> [Product]{
 	}
 	return []
 }
+
+//TODO: Perform search and call callback
+func performSearch(searchString: String, callback: @escaping () -> Void){
+	
+}
