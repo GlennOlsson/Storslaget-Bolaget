@@ -1,16 +1,20 @@
 //
-//  CategoryDetailWC.swift
+//  ServerHandler.swift
 //  Storslaget_Bolaget
 //
-//  Created by Glenn Olsson on 2020-04-12.
+//  Created by Glenn Olsson on 2020-04-14.
 //  Copyright © 2020 Glenn Olsson. All rights reserved.
 //
 
 import Foundation
 import JSON
 
-//TODO: Actually implement
-func getProductsOf(category: String) -> [Product] {
+func updateProductInDB(product: Product){
+	//TODO
+	print("Updated \(product.id)")
+}
+
+func getAllProcucts() -> [Product]{
 	do {
 		let jsonRes = try JSON.from("Products.json")!
 		if let productsJson = jsonRes as? [[String: Any]]{
@@ -21,24 +25,10 @@ func getProductsOf(category: String) -> [Product] {
 			}
 			return products
 		} else {
-			print("ERROR PARSE JSON \(category)")
+			print("ERROR PARSE JSON")
 		}
 	} catch {
 		print("BAD JSON \(error)")
 	}
 	return []
-}
-
-public class CategoryDetailViewController {
-	var products: [Product]
-	var category: String
-	
-	init(category: String){
-		self.category = category
-		self.products = []
-	}
-	
-	public func getProducts(){
-		products = getProductsOf(category: category)
-	}
 }

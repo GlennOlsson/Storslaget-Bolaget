@@ -34,6 +34,8 @@ public func HASH(_ str: String) -> Int {
 	return val
 }
 
+var state: StateManager!
+
 //Get pixels reprecenting x precent of said dimension
 public func getPixels(dimension: DIMENSION, precent: CGFloat) -> CGFloat{
 	let bounds = UIScreen.main.bounds

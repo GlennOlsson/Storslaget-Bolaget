@@ -9,31 +9,44 @@
 import SwiftUI
 import JSON
 
-//Show with
-//Button.sheet(isPresented: self.$isPushing)
-
 struct CategoryDetailView: View {
 	
-	var category: String
-	//	var controller: CategoryDetailViewController
+	@State var showModal: Bool = false
+	@State var currentProduct: Product?
 	
-	let products: [Product]
+	var category: String
+//	var controller: CategoryDetailViewController
+	
+//	var products: [Product]
 	
 	init(category: String){
 		self.category = category
 		//		products = getProductsOf(category: category)
-		//		controller = CategoryDetailViewController(category: category)
+		//
 		//		controller.getProducts()
-		products = getProductsOf(category: category)
+//		products = getProductsOf(category: category)
+//		controller = CategoryDetailViewController(category: category)
+		
+		
+	}
+	
+	func updateProduct(id: ObjectIdentifier, newProduct: Product){
+		print("UPDATE ")
 	}
 	
 	var body: some View {
-		ScrollView {
+		ScrollView { 
 			Spacer()
-			ForEach(products) {product in
-				ListItem(product: product)
-					.listRowInsets(EdgeInsets())
-					.clipped()
+			ForEach(state.getProductsOf(category: category)) {product in
+				Button(action: {
+					self.showModal = true
+					self.currentProduct = product
+				}){
+					ListItem(product: product)
+						.listRowInsets(EdgeInsets())
+						.clipped()
+				}
+				
 				Spacer().frame(height: getPixels(dimension: .vertical, precent: 2), alignment: .center)
 			}
 				//			.padding(.leading, -18.0)
@@ -46,6 +59,12 @@ struct CategoryDetailView: View {
 			//		.onAppear(){
 			//			//				self.controller.getProducts()
 		}
+		.sheet(isPresented: self.$showModal, content: {
+			ProductDetailView(product: self.currentProduct!)
+			.onDisappear(perform: {() -> Void in
+				print("DISAPEAR")
+			})
+		})
 	}
 }
 
@@ -64,7 +83,12 @@ struct ListItem: View {
 					Text(product.productNameBold)
 						.padding(.leading, 10)
 					Spacer()
-					Text(product.rating.stringValue)
+					
+					if product.avgRating != nil {
+						Text(product.avgRating!.stringValue)
+					} else {
+						Text("-")
+					}
 					Text("/ 5")
 						.fontWeight(.light)
 						.padding(.trailing, 10)
@@ -78,7 +102,7 @@ struct ListItem: View {
 							.font(.subheadline)
 							.padding(.leading, 10)
 					} else {
-						Text(product.alcoholPercentage.stringValue)
+						Text("\(product.alcoholPercentage.stringValue)%")
 							.font(.subheadline)
 							.padding(.leading, 10)
 					}
@@ -106,7 +130,7 @@ struct ListItem: View {
 struct CategoryDetailView_Previews: PreviewProvider {
 	static var previews: some View {
 		NavigationView {
-			CategoryDetailView(category: "Vita viner")
+			CategoryDetailView(category: "Öl")
 		}
 	}
 }

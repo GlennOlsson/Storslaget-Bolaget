@@ -8,10 +8,12 @@
 
 import Foundation
 
-struct Product: Identifiable {
+class Product: Identifiable {
 	
 	var id: ObjectIdentifier
-	var rating: NSNumber
+	
+	var avgRating: NSNumber?
+	var myRating: Int?
 	
 	//Required
 	var productId: String
@@ -100,6 +102,11 @@ struct Product: Identifiable {
 		isInStoreSearchAssortment = json["IsInStoreSearchAssortment"] as? Bool
 		
 		id = ObjectIdentifier(productId as AnyObject)
-		rating = json["Rating"] as! NSNumber
+		avgRating = json["AvgRating"] as? NSNumber
+		myRating = json["MyRating"] as? Int
+	}
+	
+	func setRating(rating: Int){
+		self.myRating = rating
 	}
 }

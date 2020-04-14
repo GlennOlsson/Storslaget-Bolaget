@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		07AD76C0A9F1FBA959AD6FF9 /* Pods_Storslaget_BolagetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B86EF9365C37A6096F5FD98 /* Pods_Storslaget_BolagetTests.framework */; };
+		2115E1D62445D8B7007C84F1 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2115E1D52445D8B7007C84F1 /* State.swift */; };
 		21165D8C244358BC00EABC29 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21165D8B244358BC00EABC29 /* CategoriesView.swift */; };
 		21165D8E24435C5900EABC29 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21165D8D24435C5900EABC29 /* Constants.swift */; };
 		21165D9024436A3900EABC29 /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21165D8F24436A3900EABC29 /* CategoryDetailView.swift */; };
 		21165D9324438CF600EABC29 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21165D9224438CF600EABC29 /* Product.swift */; };
 		21165D96244392C400EABC29 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = 21165D95244392C400EABC29 /* Products.json */; };
-		21165D9824439B4100EABC29 /* CategoryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21165D9724439B4100EABC29 /* CategoryDetailVC.swift */; };
 		219EF21B244357F1003F4040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF21A244357F1003F4040 /* AppDelegate.swift */; };
 		219EF21D244357F1003F4040 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF21C244357F1003F4040 /* SceneDelegate.swift */; };
 		219EF220244357F1003F4040 /* Storslaget_Bolaget.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 219EF21E244357F1003F4040 /* Storslaget_Bolaget.xcdatamodeld */; };
@@ -22,6 +22,8 @@
 		219EF227244357F2003F4040 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219EF226244357F2003F4040 /* Preview Assets.xcassets */; };
 		219EF22A244357F2003F4040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219EF228244357F2003F4040 /* LaunchScreen.storyboard */; };
 		219EF235244357F2003F4040 /* Storslaget_BolagetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF234244357F2003F4040 /* Storslaget_BolagetTests.swift */; };
+		21A4EC582445EFA000545F1B /* ServerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A4EC572445EFA000545F1B /* ServerHandler.swift */; };
+		21BDF93F2443B745005CBEF6 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BDF93E2443B745005CBEF6 /* ProductDetailView.swift */; };
 		992038F2E2D874F0E328BA72 /* Pods_Storslaget_Bolaget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9481708D0DC302B44177D337 /* Pods_Storslaget_Bolaget.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,12 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2115E1D52445D8B7007C84F1 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		21165D8B244358BC00EABC29 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		21165D8D24435C5900EABC29 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		21165D8F24436A3900EABC29 /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
 		21165D9224438CF600EABC29 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		21165D95244392C400EABC29 /* Products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
-		21165D9724439B4100EABC29 /* CategoryDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailVC.swift; sourceTree = "<group>"; };
 		219EF217244357F1003F4040 /* Storslaget Bolaget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Storslaget Bolaget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		219EF21A244357F1003F4040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		219EF21C244357F1003F4040 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		219EF230244357F2003F4040 /* Storslaget_BolagetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Storslaget_BolagetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		219EF234244357F2003F4040 /* Storslaget_BolagetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storslaget_BolagetTests.swift; sourceTree = "<group>"; };
 		219EF236244357F2003F4040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21A4EC572445EFA000545F1B /* ServerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerHandler.swift; sourceTree = "<group>"; };
+		21BDF93E2443B745005CBEF6 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		22DF5657765D5F91281ADF90 /* Pods-Storslaget_Bolaget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storslaget_Bolaget.release.xcconfig"; path = "Target Support Files/Pods-Storslaget_Bolaget/Pods-Storslaget_Bolaget.release.xcconfig"; sourceTree = "<group>"; };
 		78E18F540EF3383C9B388A5D /* Pods-Storslaget_BolagetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storslaget_BolagetTests.debug.xcconfig"; path = "Target Support Files/Pods-Storslaget_BolagetTests/Pods-Storslaget_BolagetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B86EF9365C37A6096F5FD98 /* Pods_Storslaget_BolagetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Storslaget_BolagetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +86,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2115E1D72445E00F007C84F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				219EF221244357F1003F4040 /* ContentView.swift */,
+				21165D8B244358BC00EABC29 /* CategoriesView.swift */,
+				21BDF93E2443B745005CBEF6 /* ProductDetailView.swift */,
+				21165D8F24436A3900EABC29 /* CategoryDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		21165D9124438CE100EABC29 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,11 +138,8 @@
 			children = (
 				219EF21A244357F1003F4040 /* AppDelegate.swift */,
 				219EF21C244357F1003F4040 /* SceneDelegate.swift */,
-				219EF221244357F1003F4040 /* ContentView.swift */,
-				21165D8B244358BC00EABC29 /* CategoriesView.swift */,
-				21165D8F24436A3900EABC29 /* CategoryDetailView.swift */,
-				21165D9724439B4100EABC29 /* CategoryDetailVC.swift */,
-				21165D8D24435C5900EABC29 /* Constants.swift */,
+				21A4EC592445EFA900545F1B /* Backend */,
+				2115E1D72445E00F007C84F1 /* Views */,
 				219EF223244357F2003F4040 /* Assets.xcassets */,
 				219EF228244357F2003F4040 /* LaunchScreen.storyboard */,
 				219EF22B244357F2003F4040 /* Info.plist */,
@@ -154,6 +166,16 @@
 				219EF236244357F2003F4040 /* Info.plist */,
 			);
 			path = Storslaget_BolagetTests;
+			sourceTree = "<group>";
+		};
+		21A4EC592445EFA900545F1B /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				21165D8D24435C5900EABC29 /* Constants.swift */,
+				2115E1D52445D8B7007C84F1 /* State.swift */,
+				21A4EC572445EFA000545F1B /* ServerHandler.swift */,
+			);
+			path = Backend;
 			sourceTree = "<group>";
 		};
 		C1CF02383B487A328E139617 /* Pods */ = {
@@ -346,11 +368,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				219EF21B244357F1003F4040 /* AppDelegate.swift in Sources */,
+				21BDF93F2443B745005CBEF6 /* ProductDetailView.swift in Sources */,
 				21165D9324438CF600EABC29 /* Product.swift in Sources */,
+				2115E1D62445D8B7007C84F1 /* State.swift in Sources */,
+				21A4EC582445EFA000545F1B /* ServerHandler.swift in Sources */,
 				219EF220244357F1003F4040 /* Storslaget_Bolaget.xcdatamodeld in Sources */,
 				219EF222244357F1003F4040 /* ContentView.swift in Sources */,
 				21165D8C244358BC00EABC29 /* CategoriesView.swift in Sources */,
-				21165D9824439B4100EABC29 /* CategoryDetailVC.swift in Sources */,
 				219EF21D244357F1003F4040 /* SceneDelegate.swift in Sources */,
 				21165D9024436A3900EABC29 /* CategoryDetailView.swift in Sources */,
 				21165D8E24435C5900EABC29 /* Constants.swift in Sources */,

@@ -39,7 +39,8 @@
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0137;0170;0171;0172;0174;0177;0178;1517",
 		"IsNews": false,
-		"Rating": 5
+		"MyRating": 4,
+		"AvgRating": 5
 	},
 	{
 		"ProductId": "24437711",
@@ -81,7 +82,7 @@
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0170;0171;0172;0174;0177;0178;0209;1108;2101",
 		"IsNews": false,
-		"Rating": 5
+		"AvgRating": 5
 	},
 	{
 		"ProductId": "14212174",
@@ -111,7 +112,6 @@
 		"OriginLevel2": "Stockholms stad",
 		"Vintage": 0,
 		"SubCategory": "Öl",
-		"Type": "Syrlig öl",
 		"Style": "Övrig syrlig öl",
 		"AssortmentText": "Lokalt & Småskaligt",
 		"BeverageDescriptionShort": "Öl, Övrig syrlig öl",
@@ -123,7 +123,8 @@
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0140;0170;0171;0172;0174;0177;0178",
 		"IsNews": false,
-		"Rating": 3.141597
+		"MyRating": 5,
+		"AvgRating": 3.141597
 	},
 	{
 		"ProductId": "23129459",
@@ -165,7 +166,7 @@
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0170;0171;0174;0178",
 		"IsNews": false,
-		"Rating": 4.221
+		"MyRating": 4,
 	},
 	{
 		"ProductId": "24428926",
@@ -207,7 +208,8 @@
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0110;0132;0140;0170;0171;0172;0174;0177;0178;0605;1257;2201",
 		"IsNews": false,
-		"Rating": 5
+		"MyRating": 4,
+		"AvgRating": 5
 	},
 	{
 		"ProductId": "24448835",
@@ -249,7 +251,8 @@
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178;1003;1803;2204;2501",
 		"IsNews": false,
-		"Rating": 5
+		"MyRating": 4,
+		"AvgRating": 5
 	},
 	{
 		"ProductId": "23129360",
@@ -291,7 +294,8 @@
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178",
 		"IsNews": false,
-		"Rating": 4.122
+		"MyRating": 4,
+		"AvgRatingg": 4.122
 	},
 	{
 		"ProductId": "23129360",
@@ -333,7 +337,8 @@
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178",
 		"IsNews": false,
-		"Rating": 4.6
+		"MyRating": 4,
+		"AvgRating": 4.6
 	},
 	{
 		"ProductId": "23129360",
@@ -375,7 +380,8 @@
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178",
 		"IsNews": false,
-		"Rating": 5
+		"MyRating": 4,
+		"AvgRating": 5
 	},
 	{
 		"ProductId": "23129360",
@@ -417,7 +423,8 @@
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178",
 		"IsNews": false,
-		"Rating": 4.7
+		"MyRating": 4,
+		"AvgRating": 4.7
 	},
 	{
 		"ProductId": "23129360",
@@ -459,7 +466,8 @@
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178",
 		"IsNews": false,
-		"Rating": 3.5
+		"MyRating": 4,
+		"AvgRating": 3.5
 	},
 	{
 		"ProductId": "23129360",
@@ -501,7 +509,8 @@
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178",
 		"IsNews": false,
-		"Rating": 2.45
+		"MyRating": 4,
+		"AvgRating": 2.45
 	},
 	{
 		"ProductId": "23129360",
@@ -543,7 +552,8 @@
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178",
 		"IsNews": false,
-		"Rating": 1.432
+		"MyRating": 4,
+		"AvgRating": 1.432
 	},
 	{
 		"ProductId": "23129360",
@@ -585,6 +595,7 @@
 		"IsRegionalRestricted": false,
 		"IsInStoreSearchAssortment": "0132;0137;0170;0171;0172;0174;0177;0178",
 		"IsNews": false,
-		"Rating": 4.23322
+		"MyRating": 4,
+		"AvgRating": 4.23322
 	}
 ]
