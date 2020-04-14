@@ -12,13 +12,21 @@ struct ProductDetailView: View {
 	
 	var product: Product
 	
+	//Keep track of old rating so we only update in DB if changed
+	private var oldRating: Int?
+	
+	init(product: Product){
+		self.product = product
+		oldRating = self.product.myRating
+	}
+	
 	func getBGColor() -> Color {
 		let index = HASH(product.price.stringValue) % COLORS.count
 		return COLORS[index]
 	}
 	
 	func onUpdate(newRating: Int){
-		state.updateRating(newRating: newRating, productToChange: product)
+		product.myRating = newRating
 	}
 	
 	var body: some View {
@@ -86,6 +94,12 @@ struct ProductDetailView: View {
 		.background(getBGColor())
 		.foregroundColor(.white)
 		.frame(width: getPixels(dimension: .horizontal, precent: 100), height: getPixels(dimension: .vertical, precent: 100), alignment: .center)
+		.onDisappear(perform: {() -> Void in
+			if self.oldRating != self.product.myRating {
+				//Must update rating in DB
+				updateProductInDB(product: self.product)
+			}
+		})
 	}
 }
 

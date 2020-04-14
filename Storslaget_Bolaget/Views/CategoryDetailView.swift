@@ -15,23 +15,9 @@ struct CategoryDetailView: View {
 	@State var currentProduct: Product?
 	
 	var category: String
-//	var controller: CategoryDetailViewController
-	
-//	var products: [Product]
 	
 	init(category: String){
 		self.category = category
-		//		products = getProductsOf(category: category)
-		//
-		//		controller.getProducts()
-//		products = getProductsOf(category: category)
-//		controller = CategoryDetailViewController(category: category)
-		
-		
-	}
-	
-	func updateProduct(id: ObjectIdentifier, newProduct: Product){
-		print("UPDATE ")
 	}
 	
 	var body: some View {
@@ -49,21 +35,11 @@ struct CategoryDetailView: View {
 				
 				Spacer().frame(height: getPixels(dimension: .vertical, precent: 2), alignment: .center)
 			}
-				//			.padding(.leading, -18.0)
-				//			.lineSpacing(50)
-				.listRowInsets(EdgeInsets())
-				
-				
-				//		}}
-				.navigationBarTitle(category)
-			//		.onAppear(){
-			//			//				self.controller.getProducts()
+			.listRowInsets(EdgeInsets())
+			.navigationBarTitle(category)
 		}
 		.sheet(isPresented: self.$showModal, content: {
 			ProductDetailView(product: self.currentProduct!)
-			.onDisappear(perform: {() -> Void in
-				print("DISAPEAR")
-			})
 		})
 	}
 }
@@ -109,7 +85,7 @@ struct ListItem: View {
 					Spacer()
 					//TODO: Round value somewhat, 1 decimal?
 					Text("\(product.price.stringValue) kr")
-					.padding(.trailing, 10)
+						.padding(.trailing, 10)
 						.font(.subheadline)
 					
 				}

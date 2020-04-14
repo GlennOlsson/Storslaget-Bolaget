@@ -15,6 +15,7 @@ func updateProductInDB(product: Product){
 }
 
 func getAllProcucts() -> [Product]{
+	print("GETT PRODUCTS")
 	do {
 		let jsonRes = try JSON.from("Products.json")!
 		if let productsJson = jsonRes as? [[String: Any]]{

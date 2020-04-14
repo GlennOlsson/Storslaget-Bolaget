@@ -23,12 +23,4 @@ class StateManager {
 			return prod.category != nil && prod.category == category
 		})
 	}
-	
-	func updateRating(newRating: Int, productToChange: Product) {
-		for product in allProducts {
-			if product.id == productToChange.id {
-				product.myRating = newRating
-			}
-		}
-	}
 }
