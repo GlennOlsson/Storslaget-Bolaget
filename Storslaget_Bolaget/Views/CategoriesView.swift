@@ -21,20 +21,16 @@ struct CategoriesView: View {
 	var navState: NavigationState = NavigationState()
 	@State var isPushing = false
 	
-	private let placeholderCategories = ["Öl", "Vita viner", "Roséviner", "Röda viner", "Sprit", "Dessert & appertif", "Högst betyg", "Högst betyg", "Högst betyg", "Högst betyg", "Högst betyg"]
-	
 	private var pairList: [[String]]
 	
-	init(categoriesList: [String] = []){
-		let list = categoriesList.count > 0 ? categoriesList : placeholderCategories
-		
+	init(categoriesList: [String]){
 		pairList = []
 		var i = 0
-		while i < list.count {
-			if i + 1 < list.count {
-				pairList.append([list[i], list[i+1]])
+		while i < categoriesList.count {
+			if i + 1 < categoriesList.count {
+				pairList.append([categoriesList[i], categoriesList[i+1]])
 			} else {
-				pairList.append([list[i]])
+				pairList.append([categoriesList[i]])
 			}
 			i += 2
 		}
@@ -110,7 +106,7 @@ private struct Category: View {
 struct CategoriesView_Previews: PreviewProvider {
 	static var previews: some View {
 		ForEach(["iPhone XS Max"], id: \.self) { deviceName in
-			CategoriesView()
+			CategoriesView(categoriesList: state.getCategories())
 				.previewDevice(PreviewDevice(rawValue: deviceName))
 		}
 	}

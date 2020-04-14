@@ -13,24 +13,24 @@ struct ContentView: View {
  
     var body: some View {
         TabView(selection: $selection){
-			CategoriesView()
+			CategoriesView(categoriesList: state.getCategories())
                 .tabItem {
                     VStack {
-                        Image("first")
-                        Text("First")
+						Image(systemName: "list.bullet")
+                        Text("Kategorier")
                     }
-                }
+			}
                 .tag(0)
             Text("Second View")
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image("second")
-                        Text("Second")
+                        Image(systemName: "magnifyingglass")
+                        Text("Sök")
                     }
                 }
                 .tag(1)
-        }
+		}
     }
 }
 

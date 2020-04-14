@@ -23,4 +23,9 @@ class StateManager {
 			return prod.category != nil && prod.category == category
 		})
 	}
+	
+	func getCategories() -> [String]{
+		let placeholderCategories = ["Öl", "Vita viner", "Roséviner", "Röda viner", "Sprit", "Dessert & appertif", "Högst betyg", "Högst betyg", "Högst betyg", "Högst betyg", "Högst betyg"]
+		return placeholderCategories
+	}
 }

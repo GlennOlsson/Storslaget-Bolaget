@@ -36,11 +36,11 @@ struct CategoryDetailView: View {
 				Spacer().frame(height: getPixels(dimension: .vertical, precent: 2), alignment: .center)
 			}
 			.listRowInsets(EdgeInsets())
-			.navigationBarTitle(category)
 		}
 		.sheet(isPresented: self.$showModal, content: {
 			ProductDetailView(product: self.currentProduct!)
 		})
+		.navigationBarTitle(category)
 	}
 }
 
@@ -95,11 +95,7 @@ struct ListItem: View {
 			.cornerRadius(20)
 		}
 		.frame(width: getPixels(dimension: .horizontal, precent: 100), alignment: .center)
-			
 		.foregroundColor(.white)
-		
-		
-		
 	}
 }
 
