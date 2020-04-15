@@ -8,18 +8,10 @@
 
 import SwiftUI
 
-class NavigationState: ObservableObject {
-	@Published var pushToCategoriesDetailed = false
-	@Published var categoryDetailed = "CATEGORY GOES HERE"
-}
-
 let squareSize = getPixels(dimension: .horizontal, precent: 40)
 let spacingSize = getPixels(dimension: .horizontal, precent: 5)
 
 struct CategoriesView: View {
-	
-	var navState: NavigationState = NavigationState()
-	@State var isPushing = false
 	
 	private var pairList: [[String]]
 	
@@ -56,8 +48,6 @@ private struct CategoryRow: View {
 	private let cat1: String
 	private let cat2: String?
 	
-	@State var isPushing = false
-	
 	init(categories: [String]){
 		cat1 = categories[0]
 		if categories.count > 1 {
@@ -84,8 +74,6 @@ private struct CategoryRow: View {
 
 private struct Category: View {
 	let name: String
-	
-	@State var isPushing = false
 	
 	private func getBGColor() -> Color {
 		let index = HASH(name) % COLORS.count

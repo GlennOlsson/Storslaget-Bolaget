@@ -11,9 +11,6 @@ import JSON
 
 struct CategoryDetailView: View {
 	
-	@State var showModal: Bool = false
-	@State var currentProduct: Product?
-	
 	var category: String
 	
 	init(category: String){

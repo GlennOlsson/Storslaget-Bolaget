@@ -8,13 +8,32 @@
 
 import Foundation
 import JSON
+import SwiftUI
 
 class StateManager {
 	
-	var allProducts: [Product]
+	class LoadingState {
+		@State var isLoading: Bool = true
+		@State var error: Error? = nil
+		
+		init() {
+			isLoading = false
+			error = nil
+		}
+	}
+	
+	var loadingState: LoadingState
+	var allProducts: [Product]!
 	
 	init(){
-		allProducts = getAllProcucts()
+		loadingState = LoadingState()
+		getAllProcucts(callback: {
+			self.allProducts = $0
+			self.loadingState.isLoading = false
+		}) { (error) in
+			self.loadingState.isLoading = false
+			self.loadingState.error = error
+		}
 	}
 	
 	//TODO: Handle nil categories

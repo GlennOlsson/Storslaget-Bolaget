@@ -11,6 +11,9 @@ import SwiftUI
 struct ContentView: View {
     @State private var selection = 1
  
+//	var isLoading: Bool
+//	var error: Error?
+	
     var body: some View {
         TabView(selection: $selection){
 			CategoriesView(categoriesList: state.getCategories())

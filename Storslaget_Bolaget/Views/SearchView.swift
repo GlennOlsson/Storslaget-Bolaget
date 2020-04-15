@@ -17,8 +17,13 @@ struct SearchView: View {
 	func onUpdateSearch(searchString: String){
 		self.searchString = searchString
 		self.isLoading = true
-		performSearch(searchString: self.searchString, callback: {
-			self.isLoading = false
+		let dispatchQueue = DispatchQueue(label: "QueueIdentification", qos: .background)
+		
+		dispatchQueue.async(execute: {
+			performSearch(searchString: self.searchString, callback: { products in
+				self.isLoading = false
+				self.products = products
+			})
 		})
 	}
 	
