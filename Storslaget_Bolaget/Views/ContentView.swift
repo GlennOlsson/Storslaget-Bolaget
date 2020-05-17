@@ -16,8 +16,8 @@ struct ContentView: View {
 //	var error: Error?
 	
     var body: some View {
-        TabView(selection: $selection){
-			CategoriesView(categoriesList: state.getCategories())
+		TabView(selection: $selection){
+			CategoriesView(categoriesList: state.getCategories()).environmentObject(self.state)
                 .tabItem {
                     VStack {
 						Image(systemName: "list.bullet")

@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import JSON
 
 struct CategoryDetailView: View {
 	
@@ -19,7 +18,7 @@ struct CategoryDetailView: View {
 	
 	init(category: String) {
 		self.category = category
-		self.products = state.getProductsOf(category: category)
+		
 	}
 	
 	var body: some View {
@@ -27,11 +26,22 @@ struct CategoryDetailView: View {
 			if self.products == nil {
 				Text("Loading")
 			} else {
-				ScrollView {
+//				ScrollView {
 					ProductListComponent(products: self.products!)
 						.navigationBarTitle(category)
+//				}
+			}
+		}.onAppear() {
+			print("GET THOSE PRODS")
+			DispatchQueue.global(qos: .background).async {
+				let products = self.state.getProductsOf(category: self.category)
+				print("Got all prods")
+				DispatchQueue.main.async {
+					self.products = products
+					print("Assigned, \(self.products?.count ?? -1)")
 				}
 			}
+			
 		}
 	}
 	

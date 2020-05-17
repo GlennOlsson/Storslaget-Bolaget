@@ -25,11 +25,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		// Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
 		// Add `@Environment(\.managedObjectContext)` in the views that will need the context.
 		
-		state = StateManager()
-		state.loadProducts()
+		let state = StateManager()
+		
+		DispatchQueue.global(qos: .background).async {
+			state.loadProducts()
+		}
+		
 //		let products: [Product] = []
 		let contentView = RootView().environment(\.managedObjectContext, context)
-//			.environmentObject(state)
+			.environmentObject(state)
 
 		// Use a UIHostingController as window root view controller.
 		if let windowScene = scene as? UIWindowScene {

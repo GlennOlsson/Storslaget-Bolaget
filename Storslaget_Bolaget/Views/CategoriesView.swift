@@ -14,14 +14,16 @@ let spacingSize = getPixels(dimension: .horizontal, precent: 5)
 struct CategoriesView: View {
 	private var pairList: [[String]]
 	
-	init(categoriesList: [String]){
+	@EnvironmentObject var state: StateManager
+	
+	init(categoriesList: [String?]){
 		pairList = []
 		var i = 0
 		while i < categoriesList.count {
 			if i + 1 < categoriesList.count {
-				pairList.append([categoriesList[i], categoriesList[i+1]])
+				pairList.append([categoriesList[i] ?? "Ingen kategori", categoriesList[i+1] ?? "Ingen kategori"])
 			} else {
-				pairList.append([categoriesList[i]])
+				pairList.append([categoriesList[i] ?? "Ingen kategori"])
 			}
 			i += 2
 		}
@@ -32,7 +34,7 @@ struct CategoriesView: View {
 			ScrollView {
 				VStack(spacing: .some(spacingSize)) {
 					ForEach(pairList, id: \.self) { catList in
-						CategoryRow(categories: catList)
+						CategoryRow(categories: catList).environmentObject(self.state)
 					}
 				}
 				Spacer()
@@ -46,6 +48,8 @@ private struct CategoryRow: View {
 	
 	private let cat1: String
 	private let cat2: String?
+	
+	@EnvironmentObject var state: StateManager
 	
 	init(categories: [String]){
 		cat1 = categories[0]
@@ -61,7 +65,7 @@ private struct CategoryRow: View {
 			Category(name: cat1)
 			if cat2 != nil {
 				
-				Category(name: cat2!)
+				Category(name: cat2!).environmentObject(self.state)
 			} else {
 				Spacer()
 					.frame(width: squareSize, height: squareSize, alignment: .center)
@@ -74,10 +78,14 @@ private struct CategoryRow: View {
 private struct Category: View {
 	let name: String
 	
+	@EnvironmentObject var state: StateManager
+	
 	private func getBGColor() -> Color {
 		let index = HASH(name) % COLORS.count
 		return COLORS[index]
 	}
+	
+	
 	
 	var body: some View {
 		NavigationLink(destination: CategoryDetailView(category: name)) {

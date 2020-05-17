@@ -125,6 +125,7 @@ struct Rater: View {
 			if rating > 0 {
 				ForEach((1...rating), id: \.self) { index in
 					Button(action: {
+						UIImpactFeedbackGenerator(style: .light).impactOccurred()
 						self.rating = index
 						self.onUpdate(index)
 					}) {
@@ -137,8 +138,11 @@ struct Rater: View {
 			if rating < 5 {
 				ForEach((rating + 1...5), id: \.self) { index in
 					Button(action: {
-						self.rating = index
-						self.onUpdate(index)
+						if self.rating != index {
+							UIImpactFeedbackGenerator(style: .light).impactOccurred()
+							self.rating = index
+							self.onUpdate(index)
+						}
 					}) {
 						Image(systemName: "star")
 							.resizable()

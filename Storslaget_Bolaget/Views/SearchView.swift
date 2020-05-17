@@ -19,7 +19,10 @@ struct SearchView: View {
 	
 	//TODO: Perform search and call callback
 	func performSearch(searchString: String, callback: @escaping ([Product]) -> Void){
-		sleep(1)
+		if searchString.count < 1 {
+			callback([])
+			return
+		}
 		callback(state.allProducts?.filter({(product) -> Bool in
 			return product.productNameBold.lowercased().contains(searchString.lowercased())
 		}) ?? [])
@@ -60,12 +63,12 @@ struct SearchView: View {
 	
 	var body: some View {
 		NavigationView {
-			ScrollView {
+			VStack {
 				SearchBar(onUpdateSearch: onUpdateSearch(searchString: ))
 				
 				renderContent()
-			}
-			.navigationBarTitle(searchString.count > 0 ? searchString : "Sök")
+				Spacer()
+			}.navigationBarTitle(searchString.count > 0 ? searchString : "Sök")
 		}
 	}
 }

@@ -9,20 +9,21 @@
 import SwiftUI
 
 struct RootView: View {
+	@EnvironmentObject var state: StateManager
 	
 	@State var isLoading: Bool = true
 	var body: some View {
 		VStack {
 			if state.loadingState.isLoading {
-				Text("Hello, World, loading atm!")
-				Button(action: {
-					print(state.loadingState.isLoading)
-					print(state.allProducts?.count ?? -1)
-				}) {
-					Text("UPDATE")
-				}
+				Text("Loading...")
+//				Button(action: {
+//					print(self.state.loadingState.isLoading)
+//					print(self.state.allProducts?.count ?? -1)
+//				}) {
+//					Text("UPDATE")
+//				}
 			} else {
-				ContentView()
+				ContentView().environmentObject(self.state)
 			}
 		}
 //		.onAppear {

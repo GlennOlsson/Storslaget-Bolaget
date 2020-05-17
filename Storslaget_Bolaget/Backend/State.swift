@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import JSON
 import SwiftUI
 
 class StateManager: ObservableObject {
@@ -39,16 +38,31 @@ class StateManager: ObservableObject {
 	
 	//TODO: Handle nil categories
 	func getProductsOf(category: String) -> [Product] {
+		print("Get all prods")
 		guard allProducts != nil else {
 			return []
 		}
-		return allProducts!.filter({(prod: Product) -> Bool in
-			return prod.category != nil && prod.category == category
-		})
+		
+		if category == "Ingen kategori" {
+			return allProducts!.filter({(prod: Product) -> Bool in
+				return prod.category == nil
+			})
+		} else {
+			return allProducts!.filter({(prod: Product) -> Bool in
+				return (prod.category != nil && prod.category == category)
+			})
+		}
 	}
 	
-	func getCategories() -> [String]{
-		let placeholderCategories = ["Öl", "Vita viner", "Roséviner", "Röda viner", "Sprit", "Dessert & appertif", "Högst betyg", "Högst betyg", "Högst betyg", "Högst betyg", "Högst betyg"]
-		return placeholderCategories
+	func getCategories() -> [String?]{
+		var categories: Set<String?> = []
+		
+		for product in allProducts ?? [] {
+			categories.insert(product.category)
+		}
+		
+		return categories.map({cat in
+			return cat
+		})
 	}
 }

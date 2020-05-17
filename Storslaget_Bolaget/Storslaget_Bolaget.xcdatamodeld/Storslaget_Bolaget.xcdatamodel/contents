@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Product" representedClassName="Product" syncable="YES" codeGenerationType="class">
+    <entity name="TODO_Product" representedClassName="TODO_Product" syncable="YES" codeGenerationType="class">
         <attribute name="alcoholePrecentage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="assortmentText" optional="YES" attributeType="String"/>
         <attribute name="avgRating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -22,6 +22,6 @@
         <attribute name="volume" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
     <elements>
-        <element name="Product" positionX="-63" positionY="-18" width="128" height="328"/>
+        <element name="TODO_Product" positionX="-63" positionY="-18" width="128" height="328"/>
     </elements>
 </model>

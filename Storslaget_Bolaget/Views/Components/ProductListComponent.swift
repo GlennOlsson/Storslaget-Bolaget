@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import JSON
 
 struct ProductListComponent: View {
 	
@@ -27,13 +26,14 @@ struct ProductListComponent: View {
 	
 	var body: some View {
 		VStack {
-			Spacer()
-			ForEach(products) {product in
-				ProductListItem(product: product, onPress: self.onProductPressed(product:))
+			List {
+				ForEach(products, content: { product in
+					ProductListItem(product: product, onPress: self.onProductPressed(product:))
+						.listRowInsets(EdgeInsets())
+						.clipped()
+				})
 					.listRowInsets(EdgeInsets())
-					.clipped()
 			}
-			.listRowInsets(EdgeInsets())
 		}
 		.sheet(isPresented: self.$showModal, content: {
 			ProductDetailView(product: self.currentProduct!)
@@ -85,15 +85,15 @@ private struct ProductListItem: View {
 						HStack {
 							if product.productNameThin != nil {
 								Text(product.productNameThin!)
-//									.font(.subheadline)
+								//									.font(.subheadline)
 							} else {
 								Text("\(product.alcoholPercentage.stringValue)%")
-//									.font(.subheadline)
+								//									.font(.subheadline)
 							}
 							Spacer()
 							//TODO: Round value somewhat, 1 decimal?
 							Text("\(product.price.stringValue) kr")
-//								.font(.subheadline)
+							//								.font(.subheadline)
 							
 						}
 						.padding(.horizontal, 10)
