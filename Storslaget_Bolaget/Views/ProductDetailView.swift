@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ProductDetailView: View {
+	@EnvironmentObject var state: StateManager
 	
 	var product: Product
 	
@@ -150,9 +151,10 @@ struct Rater: View {
 }
 
 struct ProductDetailView_Previews: PreviewProvider {
+	
 	static var previews: some View {
 		ForEach(["iPhone XS Max", "iPhone SE"], id: \.self) { deviceName in
-			ProductDetailView(product: state.getProductsOf(category: "Öl")[2]).previewDevice(PreviewDevice(rawValue: deviceName))
+			ProductDetailView(product: TEST_PRODUCT).previewDevice(PreviewDevice(rawValue: deviceName))
 		}
 	}
 }

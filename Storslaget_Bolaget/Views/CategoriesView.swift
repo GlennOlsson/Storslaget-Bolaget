@@ -12,7 +12,6 @@ let squareSize = getPixels(dimension: .horizontal, precent: 40)
 let spacingSize = getPixels(dimension: .horizontal, precent: 5)
 
 struct CategoriesView: View {
-	
 	private var pairList: [[String]]
 	
 	init(categoriesList: [String]){
@@ -92,9 +91,10 @@ private struct Category: View {
 }
 
 struct CategoriesView_Previews: PreviewProvider {
+	
 	static var previews: some View {
 		ForEach(["iPhone XS Max"], id: \.self) { deviceName in
-			CategoriesView(categoriesList: state.getCategories())
+			CategoriesView(categoriesList: TEST_CATEGORIES)
 				.previewDevice(PreviewDevice(rawValue: deviceName))
 		}
 	}

@@ -9,19 +9,25 @@
 import SwiftUI
 
 struct RootView: View {
+	
+	@State var isLoading: Bool = true
 	var body: some View {
 		VStack {
 			if state.loadingState.isLoading {
-				Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+				Text("Hello, World, loading atm!")
 				Button(action: {
 					print(state.loadingState.isLoading)
+					print(state.allProducts?.count ?? -1)
 				}) {
 					Text("UPDATE")
 				}
 			} else {
-				Text("Loaded")
+				ContentView()
 			}
 		}
+//		.onAppear {
+//			self.state.loadProducts()
+//		}
 	}
 }
 

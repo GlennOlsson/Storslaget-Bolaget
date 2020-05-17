@@ -10,35 +10,39 @@ import Foundation
 import JSON
 import SwiftUI
 
-class StateManager {
+class StateManager: ObservableObject {
 	
-	class LoadingState {
-		@State var isLoading: Bool = true
-		@State var error: Error? = nil
+	class LoadingState: ObservableObject {
+		@Published var isLoading: Bool = true
+		@Published var error: Error? = nil
 		
 		init() {
-			isLoading = false
+			isLoading = true
 			error = nil
 		}
 	}
 	
-	var loadingState: LoadingState
-	var allProducts: [Product]!
+	@Published var loadingState: LoadingState = LoadingState()
+	@Published var allProducts: [Product]?
 	
-	init(){
-		loadingState = LoadingState()
-		getAllProcucts(callback: {
-			self.allProducts = $0
-			self.loadingState.isLoading = false
-		}) { (error) in
-			self.loadingState.isLoading = false
-			self.loadingState.error = error
-		}
+	func loadProducts() {
+		print("Has assinged")
+		getAllProcucts(callback: { products in
+			print("Callback with \(products.count) products")
+			DispatchQueue.main.async {
+				self.allProducts = products
+				self.loadingState.isLoading = false
+			}
+		})
+		print("Gone")
 	}
 	
 	//TODO: Handle nil categories
 	func getProductsOf(category: String) -> [Product] {
-		return allProducts.filter({(prod: Product) -> Bool in
+		guard allProducts != nil else {
+			return []
+		}
+		return allProducts!.filter({(prod: Product) -> Bool in
 			return prod.category != nil && prod.category == category
 		})
 	}

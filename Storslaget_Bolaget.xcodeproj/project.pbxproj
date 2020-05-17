@@ -28,6 +28,7 @@
 		21C9B6AE2446027D00465145 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C9B6AD2446027D00465145 /* SearchView.swift */; };
 		21C9B6B02446033200465145 /* ProductListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C9B6AF2446033200465145 /* ProductListComponent.swift */; };
 		21C9B6B324462B4D00465145 /* ActivityIndicatorComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C9B6B224462B4D00465145 /* ActivityIndicatorComponent.swift */; };
+		21F711F82455D92300C19ACF /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F711F72455D92300C19ACF /* TestData.swift */; };
 		992038F2E2D874F0E328BA72 /* Pods_Storslaget_Bolaget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9481708D0DC302B44177D337 /* Pods_Storslaget_Bolaget.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		21C9B6AD2446027D00465145 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		21C9B6AF2446033200465145 /* ProductListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListComponent.swift; sourceTree = "<group>"; };
 		21C9B6B224462B4D00465145 /* ActivityIndicatorComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorComponent.swift; sourceTree = "<group>"; };
+		21F711F72455D92300C19ACF /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		22DF5657765D5F91281ADF90 /* Pods-Storslaget_Bolaget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storslaget_Bolaget.release.xcconfig"; path = "Target Support Files/Pods-Storslaget_Bolaget/Pods-Storslaget_Bolaget.release.xcconfig"; sourceTree = "<group>"; };
 		78E18F540EF3383C9B388A5D /* Pods-Storslaget_BolagetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storslaget_BolagetTests.debug.xcconfig"; path = "Target Support Files/Pods-Storslaget_BolagetTests/Pods-Storslaget_BolagetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B86EF9365C37A6096F5FD98 /* Pods_Storslaget_BolagetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Storslaget_BolagetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +187,7 @@
 				21165D8D24435C5900EABC29 /* Constants.swift */,
 				2115E1D52445D8B7007C84F1 /* State.swift */,
 				21A4EC572445EFA000545F1B /* ServerHandler.swift */,
+				21F711F72455D92300C19ACF /* TestData.swift */,
 			);
 			path = Backend;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				21C9B6B324462B4D00465145 /* ActivityIndicatorComponent.swift in Sources */,
 				219EF21B244357F1003F4040 /* AppDelegate.swift in Sources */,
 				21BDF93F2443B745005CBEF6 /* ProductDetailView.swift in Sources */,
+				21F711F82455D92300C19ACF /* TestData.swift in Sources */,
 				21165D9324438CF600EABC29 /* Product.swift in Sources */,
 				2115E1D62445D8B7007C84F1 /* State.swift in Sources */,
 				21B624E72447B3D00017196D /* RootView.swift in Sources */,

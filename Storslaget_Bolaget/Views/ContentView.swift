@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 1
+	@EnvironmentObject var state: StateManager
  
 //	var isLoading: Bool
 //	var error: Error?

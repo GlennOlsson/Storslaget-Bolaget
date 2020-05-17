@@ -8,6 +8,7 @@
 
 import Foundation
 import JSON
+import Combine
 
 enum FetchError: String, Error {
 	case badURL = "Bad URL"
@@ -20,49 +21,10 @@ func updateProductInDB(product: Product) {
 	print("Updated \(product.id)")
 }
 
-private func parseToProducts(data: Data?) throws -> [Product] {
-	guard let unwrappedData = data else {
-		throw FetchError.noData
-	}
-	let json = try? JSONSerialization.jsonObject(with: unwrappedData, options: [])
-	if let productsJson = json as? [[String: Any]]{
-		var products: [Product] = []
-		for productJson in productsJson {
-			let product = Product(json: productJson)
-			products.append(product)
-		}
-		return products
-	} else {
-		throw FetchError.jsonParseError
-	}
-}
-
-func getAllProcucts(callback: @escaping ([Product]) -> Void, onError: @escaping (Error) -> Void){
-	guard let url = URL(string: "https://glennolsson.se") else {
-		onError(FetchError.badURL)
-		return
-	}
-	print("Making request")
-	URLSession.shared.dataTask(with: url, completionHandler: { data, _, error in
-		print("Got response", data, error)
-		if error != nil {
-			onError(error!)
-			return
-		}
-		do {
-			let products = try parseToProducts(data: data)
-			callback(products)
-		} catch {
-			print("Error")
-			onError(error)
-		}
-	}).resume()
-}
-
-func getAllProcucts() -> [Product]{
+private func parseToProducts(jsonString: String) throws -> [Product] {
 	do {
-		let jsonRes = try JSON.from("Products.json")!
-		if let productsJson = jsonRes as? [[String: Any]]{
+		let json = try? JSONSerialization.jsonObject(with: jsonString.data(using: .utf8)!)
+		if let productsJson = json as? [[String: Any]]{
 			var products: [Product] = []
 			for productJson in productsJson {
 				let product = Product(json: productJson)
@@ -70,18 +32,72 @@ func getAllProcucts() -> [Product]{
 			}
 			return products
 		} else {
-			print("ERROR PARSE JSON")
+			print("JSON PARSE ERROR")
+			throw FetchError.jsonParseError
 		}
 	} catch {
-		print("BAD JSON x\(error)")
+		print("Error with JSON Serilizaton")
+		throw FetchError.jsonParseError
 	}
-	return []
 }
 
-//TODO: Perform search and call callback
-func performSearch(searchString: String, callback: @escaping ([Product]) -> Void){
-	sleep(1)
-	callback(state.allProducts.filter({(product) -> Bool in
-		return product.productNameBold.lowercased().contains(searchString.lowercased())
-	}))
+//TODO: On error
+func getAllProcucts(callback: @escaping (_ products: [Product]) -> Void) {
+	guard let url = URL(string: "https://us-central1-storslaget-bolaget.cloudfunctions.net/getAllProductsURL") else {
+		//		onError(FetchError.badURL)
+		return
+	}
+	print("Making request")
+	let request = URLRequest(url: url)
+	
+	//if no error, data is the url to the file on firebase
+	URLSession.shared.dataTask(with: request, completionHandler: { data, _, error in
+		guard let data = data else  {
+			callback([])
+			return
+		}
+		print("Got response", data.count)
+		if data.count < 100 {
+			print("data: \(String(data: data, encoding: .utf8))")
+		}
+		do {
+			let dataString = String(data: data, encoding: .utf8)
+			guard let jsonURL = URL(string: dataString!) else {
+				print("Could not get url out of response")
+				//					onError(FetchError.badURL)
+				callback([])
+				return
+			}
+			print("getting json from \(jsonURL.baseURL)")
+			let json = try String(contentsOf: jsonURL, encoding: .utf8)
+			print("got json, parsing")
+			let products = try parseToProducts(jsonString: json)
+			print("Parsed")
+			//				callback(products)
+			callback(products)
+		} catch {
+			print("Error")
+			//				onError(error)
+			callback([])
+		}
+		}).resume()
 }
+//
+//func getAllProcucts() -> [Product]{
+//	do {
+//		let jsonRes = try JSON.from("Products.json")!
+//		if let productsJson = jsonRes as? [[String: Any]]{
+//			var products: [Product] = []
+//			for productJson in productsJson {
+//				let product = Product(json: productJson)
+//				products.append(product)
+//			}
+//			return products
+//		} else {
+//			print("ERROR PARSE JSON")
+//		}
+//	} catch {
+//		print("BAD JSON x\(error)")
+//	}
+//	return []
+//}

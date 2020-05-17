@@ -9,10 +9,21 @@
 import SwiftUI
 
 struct SearchView: View {
+	@EnvironmentObject var state: StateManager;
+	
 	@State var searchString: String = ""
 	@State var products: [Product] = []
 	
 	@State var isLoading: Bool = false
+	
+	
+	//TODO: Perform search and call callback
+	func performSearch(searchString: String, callback: @escaping ([Product]) -> Void){
+		sleep(1)
+		callback(state.allProducts?.filter({(product) -> Bool in
+			return product.productNameBold.lowercased().contains(searchString.lowercased())
+		}) ?? [])
+	}
 	
 	func onUpdateSearch(searchString: String){
 		self.searchString = searchString
@@ -20,7 +31,7 @@ struct SearchView: View {
 		let dispatchQueue = DispatchQueue(label: "QueueIdentification", qos: .background)
 		
 		dispatchQueue.async(execute: {
-			performSearch(searchString: self.searchString, callback: { products in
+			self.performSearch(searchString: self.searchString, callback: { products in
 				self.isLoading = false
 				self.products = products
 			})
